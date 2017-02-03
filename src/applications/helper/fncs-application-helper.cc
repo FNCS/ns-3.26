@@ -77,7 +77,7 @@ FncsApplicationHelper::Install (NodeContainer c)
 Ptr<Application>
 FncsApplicationHelper::InstallPriv (Ptr<Node> node)
 {
-  std::string counter = static_cast<std::ostringstream*>( &(std::ostringstream() << m_counter++) )->str();
+  std::string counter = (std::ostringstream() << m_counter++).str();
   return InstallPriv(node, m_prefix+counter);
 }
 
