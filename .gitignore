@@ -35,3 +35,12 @@ TAGS
 
 build-dir/
 build/
+static routing example log.txt
+DlMacStats.txt
+DlPdcpStats.txt
+DlRlcStats.txt
+logging_out.txt
+UlMacStats.txt
+UlPdcpStats.txt
+UlRlcStats.txt
+RADICS log.txt
