@@ -80,7 +80,7 @@ FncsApplicationHelper::InstallPriv (Ptr<Node> node)
   std::ostringstream os;
   os << m_counter++;
   std::string counter = os.str();
-  # std::string counter = (std::ostringstream() << m_counter++).str();
+  // std::string counter = (std::ostringstream() << m_counter++).str();
   return InstallPriv(node, m_prefix+counter);
 }
 
