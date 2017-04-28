@@ -148,6 +148,7 @@ int main()
     conf.env['INCLUDES_CZMQ'] = [os.path.abspath(os.path.join(conf.env['WITH_CZMQ'],'include'))]
     conf.env['LIB_CZMQ'] = ['czmq']
     conf.env['DEFINES_CZMQ'] = ['CZMQ']
+    conf.env['CXXFLAGS_CZMQ'] = ['-Wno-error']
     conf.env['CZMQ'] = conf.check_nonfatal(fragment=czmq_test_code, use='CZMQ ZMQ',
                                               msg="Checking for library czmq")
     conf.report_optional_feature("czmq", "CZMQ Integration",
